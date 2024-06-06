@@ -1,5 +1,25 @@
+
+
+
+ .animateBounce:hover {
+   -webkit-animation-name: bounce;
+ -moz-animation-name: bounce;
+ -o-animation-name: bounce;
+ animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);opacity: 1;}
+ 40% {transform: translateY(-20px);}
+ 60% {transform: translateY(-10px);}
+}
+
+
 nav{
-    background-color: white;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 nav ul{
@@ -53,4 +73,9 @@ nav li:first-child{
 }
 .sidebar a{
     width:100%;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
 }
