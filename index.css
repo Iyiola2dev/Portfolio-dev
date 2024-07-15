@@ -56,6 +56,15 @@
 }
 
 
+/* Responsive styles */
+@media (max-width: 600px) {
+  .cube {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+  }
+}
+
 
 /*  */
 
